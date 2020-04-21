@@ -17,7 +17,7 @@ class ChatViewController: UIViewController {
     
     func setUpNavigation(){
         
-        let backButton = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action:#selector(backPressed))
+        let backButton = UIBarButtonItem(image: UIImage(named: "back"), style: .plain, target: self, action: #selector(backPressed))
         if let contactView = Bundle.main.loadNibNamed("CustomContactHeader", owner: self, options: nil)?.first as? CustomContactHeader {
             let user = User(userName:"Chat User", image: "profilemale", isOnline: true)
             contactView.setUserDetails(user)
@@ -32,16 +32,15 @@ class ChatViewController: UIViewController {
     }
     
     @objc func callClicked(){
-        
+         print("Add logic for voice Call")
     }
     
     @objc func videoCallClicked(){
-    
+        print("Add logic for video Call")
     }
     
     @objc func backPressed(){
-      
-      
+        navigationController?.popViewController(animated: true)
     }
 }
 

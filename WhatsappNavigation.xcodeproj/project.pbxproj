@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B90E050244F79BA0010393F /* Screenshot 2020-04-22 at 00.23.25.png in Resources */ = {isa = PBXBuildFile; fileRef = 8B90E04F244F79BA0010393F /* Screenshot 2020-04-22 at 00.23.25.png */; };
 		8BCFD8E4244F27CB0065406E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCFD8E3244F27CB0065406E /* AppDelegate.swift */; };
 		8BCFD8E6244F27CB0065406E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCFD8E5244F27CB0065406E /* SceneDelegate.swift */; };
 		8BCFD8E8244F27CB0065406E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCFD8E7244F27CB0065406E /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B90E04F244F79BA0010393F /* Screenshot 2020-04-22 at 00.23.25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screenshot 2020-04-22 at 00.23.25.png"; sourceTree = "<group>"; };
 		8BCFD8E0244F27CB0065406E /* WhatsappNavigation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WhatsappNavigation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BCFD8E3244F27CB0065406E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BCFD8E5244F27CB0065406E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -47,9 +49,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B90E04E244F79BA0010393F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8B90E04F244F79BA0010393F /* Screenshot 2020-04-22 at 00.23.25.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		8BCFD8D7244F27CB0065406E = {
 			isa = PBXGroup;
 			children = (
+				8B90E04E244F79BA0010393F /* Images */,
 				8BCFD8E2244F27CB0065406E /* WhatsappNavigation */,
 				8BCFD8E1244F27CB0065406E /* Products */,
 			);
@@ -78,8 +89,8 @@
 		8BCFD8F9244F28970065406E /* Chat Scene */ = {
 			isa = PBXGroup;
 			children = (
-				8BCFD8FA244F28A90065406E /* Header */,
 				8BCFD8F7244F28510065406E /* ChatViewController.swift */,
+				8BCFD8FA244F28A90065406E /* Header */,
 			);
 			path = "Chat Scene";
 			sourceTree = "<group>";
@@ -204,6 +215,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B90E050244F79BA0010393F /* Screenshot 2020-04-22 at 00.23.25.png in Resources */,
 				8BCFD8FE244F4CE00065406E /* CustomContactHeader.xib in Resources */,
 				8BCFD8F0244F27CD0065406E /* LaunchScreen.storyboard in Resources */,
 				8BCFD8ED244F27CD0065406E /* Assets.xcassets in Resources */,

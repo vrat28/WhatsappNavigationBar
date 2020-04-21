@@ -16,9 +16,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rSK-Xd-aFs">
-                                <rect key="frame" x="178" y="414" width="59" height="30"/>
+                                <rect key="frame" x="191" y="414" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Click Me"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
                                     <segue destination="qg8-Kq-KRO" kind="show" id="dMH-LW-qpr"/>
                                 </connections>
@@ -49,6 +49,37 @@
             </objects>
             <point key="canvasLocation" x="1873.913043478261" y="131.91964285714286"/>
         </scene>
+        <!--Profile Detail Controller-->
+        <scene sceneID="MGy-hi-EQA">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="UaV-Ba-ZmX" customClass="ProfileDetailController" customModule="WhatsappNavigation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Te0-tK-QYG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profilemale" translatesAutoresizingMaskIntoConstraints="NO" id="sGP-1N-cXc">
+                                <rect key="frame" x="57" y="303" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="bob-Qh-L5n"/>
+                                    <constraint firstAttribute="width" constant="300" id="c6s-a0-3un"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sGP-1N-cXc" firstAttribute="centerX" secondItem="2el-9W-zIo" secondAttribute="centerX" id="unF-Xe-u1I"/>
+                            <constraint firstItem="sGP-1N-cXc" firstAttribute="centerY" secondItem="2el-9W-zIo" secondAttribute="centerY" id="wfP-c5-sg2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2el-9W-zIo"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="sGP-1N-cXc" id="uZX-fF-p99"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQF-JZ-kEP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2714" y="147"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="3kW-F4-L3T">
             <objects>
@@ -68,4 +99,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="profilemale" width="115" height="115"/>
+    </resources>
 </document>

@@ -1,5 +1,5 @@
 //
-//  ChatViewController.swift
+//  ProfileDetailController.swift
 //  WhatsappNavigation
 //
 //  Created by Varun Rathi on 21/04/20.
@@ -8,15 +8,13 @@
 
 import UIKit
 
-class ChatViewController: UIViewController {
+class ProfileDetailController: UIViewController {
+    @IBOutlet weak var backgroundImage:UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUpNavigation()
-    }
-    
-    func setUpNavigation(){
+        
         
     }
-    
 }

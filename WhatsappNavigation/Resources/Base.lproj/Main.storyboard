@@ -33,10 +33,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="129.91071428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Chat View Controller-->
         <scene sceneID="HPH-5M-0Na">
             <objects>
-                <viewController id="qg8-Kq-KRO" sceneMemberID="viewController">
+                <viewController id="qg8-Kq-KRO" customClass="ChatViewController" customModule="WhatsappNavigation" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JSa-7s-GI7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

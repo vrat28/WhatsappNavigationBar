@@ -16,18 +16,29 @@ protocol ContactHeaderDelegate {
 class CustomContactHeader:UIView {
     
     @IBOutlet var imageView:UIImageView!
+    @IBOutlet var lblUserName:UILabel!
     @IBOutlet var lblPresence:UILabel!
     var delegate:ContactHeaderDelegate?
     
     
-    override class func awakeFromNib() {
+    override  func awakeFromNib() {
         super.awakeFromNib()
+        lblPresence.textColor = UIColor.lightGray
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(contactTapped))
-        self.addGestureRecognizer(tapGesture)
+        addGestureRecognizer(tapGesture)
+    }
+    
+    func setUserDetails(_ user:User){
+        lblUserName.text = user.userName
+        lblPresence.text = user.isOnline ? "Online" : "Offline"
+        if let image = user.image {
+            imageView.image = UIImage(named: image)
+        }
+        
     }
     
     @objc func contactTapped() {
-        
+        delegate?.contactClicked()
     }
     
 }
